@@ -84,8 +84,24 @@ In ML , we want to know the prob. dens. func. (PDF) of the data
   - for a vector, we have a dimensional function 
 
 
-__Covariance Mtrx__
+__Covariance Matrix__
   variables on each axis, the cross is a number 0.0 - 1.0 describing relationship. 1 being 100% correlated. 0 meaning not related at all.
+  - Need a matrix where columns are features and rows are data
+  
+  - Calculate covariance of a cell
+  Example: Cov. Matrix (for A and B)
+      legend: C(x) = Covarience of variable x  
+
+     A       B
+  A C(AA)  C(AB)
+
+  B C(BA)  C(BB)
+
+  __Covarience Forumala__
+  Example:Cov(AB) = Cov(BA) =  Avg(A*B) - Avg(A)*Avg(B)
+  
+  
+  
 
 ## Entrpy
   
@@ -97,14 +113,24 @@ __Covariance Mtrx__
   noise , missing values , outliers , duplicates
 
 # Linear Algbra
+__Correlated Data is Bad__
+  Why?
+  Want values related to the target, _NOT_ each other. When there is too much relationship, it leads to all kinds of trouble, like redundancy, overfitting, instability, and bad interpretability (which feature ACTUALLY caused the effect?)
   
+ 
 __Eigen value Decomposition (EVD)__
   xfrm a matrix to another w/ uncorrelated elements
   ¿ Finding a list of things that just don't affect each other...maybe they are useless??? Lol
 
     __Hermition matrix__
     ¿ What ?     
-  
+  https://www.youtube.com/watch?v=glaiP222JWA
+  https://www.youtube.com/watch?v=KTKAp9Q3yWg
+  __eigenvalue__
+    
+  __eigenvalues__ 
+
+
 __Singular Value Decomposition (SVD)__
   what if matrix is singular, not square  ( what is a singular matrix? Sqr mtrx? )
   Unitary Matix ?
