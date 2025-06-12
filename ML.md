@@ -100,8 +100,7 @@ __Covariance Matrix__
   __Covarience Forumala__
   Example:Cov(AB) = Cov(BA) =  Avg(A*B) - Avg(A)*Avg(B)
   
-  
-  
+ 
 
 ## Entrpy
   
@@ -126,9 +125,44 @@ __Eigen value Decomposition (EVD)__
     ¿ What ?     
   https://www.youtube.com/watch?v=glaiP222JWA
   https://www.youtube.com/watch?v=KTKAp9Q3yWg
-  __eigenvalue__
-    
-  __eigenvalues__ 
+  __eigen values__
+    sqr mtrx -> igV Ax = Kx where A is sq mtrx, igV is x
+    igV = iegen vector
+    I = identity matrix
+
+  derive:
+    Ax = Kx = K I x
+
+    Ax - KIx = 0
+    (A - KI)x = 0 
+    this means (A - KI) is NOT invertible.
+    Determinant (A - KI) is 0 , because non-invertible matrixes are like that
+
+  Example
+
+  A =|  0  1 |
+     | -2 -3 |
+
+  so
+  det(A -KI)
+  |  0  1 | - | K 0 | = | -K   1  |
+  | -2 -3 |   | 0 K |   | -2 -3-K |
+
+  Det = cross(lft to dwn) - cross(lft to up)
+  det = (-K*(-3-K)) - (2 ) = 3K + K^2 +2 = 0
+  (Solve the quatratic here)
+  (K +2)(K+1) = 0
+  K = -2 or -1
+
+  Hmmm...determinants will probably get a LOT harder for bigger matrices
+
+  THESE are the Eigen Values.
+
+  __eigen vectors_
+
+  We still don't know eigen vector (x)
+
+  Remember Ax = Kx where K = -1,-2_ 
 
 
 __Singular Value Decomposition (SVD)__
