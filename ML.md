@@ -82,7 +82,15 @@ In ML , we want to know the prob. dens. func. (PDF) of the data
   these funcs are non-negative and may be defined over 
   - The volume under this function is probability
   - for a vector, we have a dimensional function 
+__Dot Products Explained again__
+  https://www.youtube.com/watch?v=BcxfxvYCL1g
+  If we have a vector A and another vector B
+  What is the projection of one B onto the other A
+  How much do you you to scale that transposed vector B to equal the original A?
+  That amound you have to multiply it by, that's the dot product. Done.
+  How much is B in the A direction?
 
+__Cross Product__
 
 __Covariance Matrix__
   variables on each axis, the cross is a number 0.0 - 1.0 describing relationship. 1 being 100% correlated. 0 meaning not related at all.
